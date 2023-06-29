@@ -56,3 +56,23 @@ ex: type test = {
 id: number
 keyname?: string
 }
+
+# typing event props
+
+out of many event props, get familiar with most used events: click event on button, change event on input
+
+## click event on button
+
+click event on button type: React.MouseEvent<HTMLButtonElement>
+
+### handle click (case: does not need any parameter, does not return anything)
+
+ex: making api call which does not have to accept a parameter or return a value; console.log()
+
+### handle click (case: event as parameter, does not return anything)
+
+### handle click (case: id as parameter, does not return anything)
+
+## change event on input
+
+change event on input type: React.ChangeEvent<HTMLInputElement>
