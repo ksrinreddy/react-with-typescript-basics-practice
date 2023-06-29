@@ -27,6 +27,8 @@ remember to use .tsx or .ts file extensions while creating components or files t
 
 learn to type basic props of components
 
+# typing basic props
+
 ## typing string, number, boolean, object, array(of objects)
 
 syntax, basic use case
@@ -35,3 +37,22 @@ syntax, basic use case
 
 note: in the earlier days, suggestion was to use type when building applications and use interface when building libraries.
 But according to the later releases of the typescript, there is hardly any difference between type and interface.
+
+# typing advanced props
+
+## union of string literals
+
+ex: 'loading' | 'success' | 'error'
+
+## children props
+
+ex1: when child is a string
+ex2: when child is another react component (react component prop type: React.ReactNode)
+
+## optional props
+
+add question mark at the end of the key name of the prop and before the colon to make it optional prop
+ex: type test = {
+id: number
+keyname?: string
+}
