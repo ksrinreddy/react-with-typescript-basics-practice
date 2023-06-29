@@ -12,7 +12,7 @@ static type checking, helps to write more precise code
 
 # getting started: create react app that is configured specifically for typescript
 
-create a repo in github, clone to local machine, open the folder in vscode editor, open the terminal, initialize app in the same folder with create react app - typescript template using following code
+create a repo in github, clone to local machine, open the folder in vscode editor, open the terminal, initialize app in the same folder with create react app - typescript template using following command
 
 npx create-react-app . --template typescript
 
@@ -80,3 +80,9 @@ type of change event on input: React.ChangeEvent<HTMLInputElement>
 # type styles as props
 
 type of styles(inline): React.CSSProperties
+
+# tips related to props and types in react
+
+- destructuring props while defining component
+- exporting types (create them in sepearate file, export and import where it is needed)
+- reusing types (extract types and use them in multiple places)
