@@ -1,20 +1,28 @@
 import React from "react";
 import "./App.css";
-import Greet from "./components/Greet";
-import Heading from "./components/Heading";
-import Oscar from "./components/Oscar";
-import Status from "./components/Status";
+import Button from "./components/Button";
+import Input from "./components/Input";
 
 function App() {
   return (
     <div className="App">
-      <Status status="loading" />
-      <Heading>Placeholder text</Heading>
-      <Oscar>
-        <Heading>Oscar goes to Leonardo Dicpario!</Heading>
-      </Oscar>
-
-      <Greet name="Reddy" isLoggedIn={true} />
+      {/* <Button
+        handleClick={() => {
+          console.log("Button clicked");
+        }}
+      /> */}
+      {/* <Button
+        handleClick={(event) => {
+          console.log("Button clicked", event);
+        }}
+      /> */}
+      <Button
+        handleClick={(event, id) => {
+          console.log("Button clicked", event, id);
+        }}
+      />
+      {/* <Input value="" handleChange={(event) => console.log(event)} /> */}
+      <Input value="" />
     </div>
   );
 }
