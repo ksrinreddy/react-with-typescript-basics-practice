@@ -1,28 +1,11 @@
 import React from "react";
 import "./App.css";
-import Button from "./components/Button";
-import Input from "./components/Input";
+import Container from "./components/Container";
 
 function App() {
   return (
     <div className="App">
-      {/* <Button
-        handleClick={() => {
-          console.log("Button clicked");
-        }}
-      /> */}
-      {/* <Button
-        handleClick={(event) => {
-          console.log("Button clicked", event);
-        }}
-      /> */}
-      <Button
-        handleClick={(event, id) => {
-          console.log("Button clicked", event, id);
-        }}
-      />
-      {/* <Input value="" handleChange={(event) => console.log(event)} /> */}
-      <Input value="" />
+      <Container styles={{ border: "1px solid #000", padding: "1rem" }} />
     </div>
   );
 }
