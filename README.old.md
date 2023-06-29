@@ -63,7 +63,7 @@ out of many event props, get familiar with most used events: click event on butt
 
 ## click event on button
 
-click event on button type: React.MouseEvent<HTMLButtonElement>
+type of click event on button: React.MouseEvent<HTMLButtonElement>
 
 ### handle click (case: does not need any parameter, does not return anything)
 
@@ -75,4 +75,8 @@ ex: making api call which does not have to accept a parameter or return a value;
 
 ## change event on input
 
-change event on input type: React.ChangeEvent<HTMLInputElement>
+type of change event on input: React.ChangeEvent<HTMLInputElement>
+
+# type styles as props
+
+type of styles(inline): React.CSSProperties
