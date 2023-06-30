@@ -105,15 +105,23 @@ ex: user state value will be null before login or after logout, but can have som
 
 ex: is useful when the user peroperties are available(non-null) as soon as the component mounts. in that case, user type is asserted using 'as' key word to user properties type
 
-# typing useReducer hook
+## typing useReducer hook
 
 useState is good for simple state values. When state logic is complex where next state depends on previous state useReducer hook is preferrable.
 
-## basic typing of useReducer hook
+### basic typing of useReducer hook
 
 type state and action in reducer function, remaining will get auto type inference
 
-## little more strict typing of useReducer
+### little more strict typing of useReducer
 
 add little more restriction to type of action by using discriminated union to make it more precise typing.
 Discriminated union is the recommended approach while typing useReducer hook.
+
+## typing useContext (ContextAPI)
+
+use case: while providing theme context to a component
+
+### basic typing of useContext
+
+ex: typing children and themecontextprovider
