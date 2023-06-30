@@ -86,3 +86,21 @@ type of styles(inline): React.CSSProperties
 - destructuring props while defining component
 - exporting types (create them in sepearate file, export and import where it is needed)
 - reusing types (extract types and use them in multiple places)
+
+# typing hooks
+
+learn typing react hooks
+
+## typing useState hook
+
+### type inference (initial value is assigned)
+
+learn about type inference: type gets inferred based on the initial value set
+
+### type useState hook when the initial value is none and only known at a future time
+
+ex: user state value will be null before login or after logout, but can have some properties after login. type those properties using type and assign the generic union of both to useState.
+
+### type assertion
+
+ex: is useful when the user peroperties are available(non-null) as soon as the component mounts. in that case, user type is asserted using 'as' key word to user properties type
