@@ -147,3 +147,7 @@ use case: while applying focus method on input when component mounts
 
 for mutable references specify appropriate type
 use case: while setting up a timer
+
+# typing class component
+
+use case: when you need to work with older class based components based code
