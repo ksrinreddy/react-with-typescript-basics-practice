@@ -124,4 +124,12 @@ use case: while providing theme context to a component
 
 ### basic typing of useContext
 
-ex: typing children and themecontextprovider
+ex: typing children and themecontextprovider.
+works when context value is known initially.
+
+use case: providing theme to a component
+
+### typing useContext when context value is not known initially and only known in a future time
+
+usecase: user authentication, user context.
+initially user value will be null since not logged in, will have some props(AuthUser props) after login and null after logout.
