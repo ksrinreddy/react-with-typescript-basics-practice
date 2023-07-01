@@ -133,3 +133,17 @@ use case: providing theme to a component
 
 usecase: user authentication, user context.
 initially user value will be null since not logged in, will have some props(AuthUser props) after login and null after logout.
+
+## typing useRef
+
+two cases: read only ref, mutable value
+
+### typing read only useRef
+
+for dom references specify dom element type
+use case: while applying focus method on input when component mounts
+
+### typing mutable useRef
+
+for mutable references specify appropriate type
+use case: while setting up a timer
