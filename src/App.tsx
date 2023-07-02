@@ -1,39 +1,15 @@
 import React from "react";
 import "./App.css";
 import List from "./components/generics/List";
+import RandomNumber from "./components/restriction/RandomNumber";
 
 function App() {
   return (
     <div className="App">
-      {/* array of strings */}
-      {/* <List
-        items={["ram", "raj", "raghav"]}
-        onClick={(item) => console.log(item)}
-      /> */}
-      {/* array of numbers */}
-      {/* <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
-
-      {/* array of objects */}
-      <List
-        items={[
-          {
-            id: 1,
-            first: "one first",
-            second: "one second",
-          },
-          {
-            id: 2,
-            first: "two first",
-            second: "two second",
-          },
-          {
-            id: 3,
-            first: "three first",
-            second: "three second",
-          },
-        ]}
-        onClick={(item) => console.log(item)}
-      />
+      {/* <RandomNumber value={10} isPositive /> */}
+      {/* you can also set isNegative, isZero to true which is not good. you should be able to restrict that - if isPositive is set to true, other ones should be disallowed. - 'restricted props' */}
+      {/* <RandomNumber value={10} isPositive isNegative isZero /> */}
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
