@@ -176,3 +176,7 @@ ex: a number can take positive, negative, and zero values. when it is assigned p
 use case: creating custom button component, custom input component with preferred variants.
 
 type Omit allows to exclude specific prop from assigned props types.
+
+## extracting a component's prop types to reuse it in another component
+
+use case: when a component prop types are same as already existed component prop types, you can extract them and reuse.
