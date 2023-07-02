@@ -150,4 +150,11 @@ use case: while setting up a timer
 
 # typing class component
 
-use case: when you need to work with older class based components based code
+use case: when you need to work with already existed class based components based code
+
+# typing more advanced props
+
+## pass a component as prop to another component, and type it
+
+use case: passing Profile component as a prop to Private component and render profile component when user is loggedin, Login component(or page) when user is not logged in.
+get familiar with typing private and profile components.
