@@ -158,3 +158,9 @@ use case: when you need to work with already existed class based components base
 
 use case: passing Profile component as a prop to Private component and render profile component when user is loggedin, Login component(or page) when user is not logged in.
 get familiar with typing private and profile components.
+
+## Generic props
+
+use case: useful to specify generic type instead of absolute types when a prop accepts multiple types of variables.
+
+ex: if a prop accepts an array of strings, or numbers, or objects etc, specify it with generic type <T> instead of absolute types string or number etc. This will allow to pass multiple types. Also you can restrict the generic type if needed.
