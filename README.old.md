@@ -170,3 +170,9 @@ ex: if a prop accepts an array of strings, or numbers, or objects etc, specify i
 type key word: never
 use case: when a state can accept set of multiple values and when one of the values is assigned, other values should be disallowed.
 ex: a number can take positive, negative, and zero values. when it is assigned positive, negative and zero states should be disallowed.
+
+## wrapping html element and type Omit
+
+use case: creating custom button component, custom input component with preferred variants.
+
+type Omit allows to exclude specific prop from assigned props types.
